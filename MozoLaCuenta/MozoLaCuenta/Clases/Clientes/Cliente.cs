@@ -1,13 +1,11 @@
 ﻿namespace MozoLaCuenta.Clientes
 {
     public abstract class Cliente
-    {
-        internal double dineroEnElBolsillo;
+    {        
         internal Comida comida;
 
-        public Cliente(double dineroEnElBolsillo, Comida comida)
-        {
-            this.dineroEnElBolsillo = dineroEnElBolsillo;
+        public Cliente(Comida comida)
+        {           
             this.comida = comida;
         }
 

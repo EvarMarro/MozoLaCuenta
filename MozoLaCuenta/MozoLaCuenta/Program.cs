@@ -8,8 +8,8 @@ namespace MozoLaCuenta
         static void Main(string[] args)
         {
             Comida asado = new Comida(100);
-            ClienteFeliz clienteFeliz = new ClienteFeliz(100, asado);
-            ClienteEnojado clienteEnojado = new ClienteEnojado(100, asado);
+            ClienteFeliz clienteFeliz = new ClienteFeliz(asado);
+            ClienteEnojado clienteEnojado = new ClienteEnojado(asado);
             ClienteIndiferente clienteIndiferente = new ClienteIndiferente(100, asado);
 
             Console.WriteLine(string.Format("Cliente Feliz paga: {0}", clienteFeliz.calcularCosto()));

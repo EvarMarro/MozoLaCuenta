@@ -2,10 +2,11 @@
 {
     public class ClienteIndiferente : Cliente
     {
+        private double dineroEnElBolsillo;
         public ClienteIndiferente(double dineroEnElBolsillo, Comida comida) :
-            base(dineroEnElBolsillo, comida)
+            base(comida)
         {
-
+            this.dineroEnElBolsillo = dineroEnElBolsillo;
         }
         public override double propina()
         {

@@ -2,7 +2,7 @@
 {
     public class ClienteEnojado : Cliente
     {
-        public ClienteEnojado(double dineroEnElBolsillo, Comida comida): base(dineroEnElBolsillo, comida) {}
+        public ClienteEnojado(Comida comida): base(comida) {}
         public override double propina()
         {
             return 0;
